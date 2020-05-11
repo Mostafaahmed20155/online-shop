@@ -8,7 +8,7 @@ const PDFDocument = require('pdfkit')
 const Product = require('../models/product');
 const Order = require('../models/order');
 
-let ITEMS_PER_PAGE = 4
+let ITEMS_PER_PAGE = 2
 
 exports.getProducts = (req, res, next) => {
   const page = +req.query.page || 1
